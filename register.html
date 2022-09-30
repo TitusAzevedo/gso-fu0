@@ -1,49 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
     <title>Login</title>
-</head>
-<body class="bg-green-500">
+  </head>
+  <body class="bg-green-500">
     <div class="container mx-auto">
-        <div class="grid place-items-center h-screen">
-            <div class="rounded-lg shadow-xl bg-white m-4 p-8">
-                <div>
-                    <h3 class="text-center text-2xl">Stundenplan<span class="text-green-500">Dings</span></h3>
-                    <div class="mt-8">
-                        <label for="vorname" class="block text-sm font-medium text-gray-700">Vorname</label>
-                        <div class="mt-1">
-                          <input type="text" name="vorname" id="vorname" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" placeholder="Max">
-                        </div>
-                      </div>
-                      <div class="mt-4">
-                        <label for="nachname" class="block text-sm font-medium text-gray-700">Nachname</label>
-                        <div class="mt-1">
-                          <input type="text" name="nachname" id="nachname" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" placeholder="Mustermann">
-                        </div>
-                      </div>
-                    <div class="mt-8">
-                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                        <div class="mt-1">
-                          <input type="email" name="email" id="email" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                        <div class="mt-1">
-                          <input type="password" name="password" id="password" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Password">
-                        </div>
-                      </div>
-                </div>
-                <form action="/dashboard.html" class="mt-4 grid grid-cols-2 grid-rows-1 items-center">
-                    <p class="items-center text-xs float-left row-start-1 "><a href="/login.html" class="text-green-500">Login </a>here!</p>
-                    <button type="submit" class="row-start-1 rounded-md border border-transparent bg-green-500 px-4 py-2 text-sm font-medium text-white text-center shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2">Register</button>
-                </form>
+      <div class="grid place-items-center h-screen">
+        <div class="rounded-lg shadow-xl bg-white m-4 p-8">
+          <div>
+            <h3 class="text-center text-2xl">
+              Stundenplan<span class="text-green-500">Dings</span>
+            </h3>
+            <div class="mt-8">
+              <label
+                for="vorname"
+                class="block text-sm font-medium text-gray-700"
+                >Vorname</label
+              >
+              <div class="mt-1">
+                <input
+                  type="text"
+                  name="vorname"
+                  id="vorname"
+                  class="block w-full focus:outline-none rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm"
+                  placeholder="Max"
+                />
+              </div>
             </div>
+            <div class="mt-4">
+              <label
+                for="nachname"
+                class="block text-sm font-medium text-gray-700"
+                >Nachname</label
+              >
+              <div class="mt-1">
+                <input
+                  type="text"
+                  name="nachname"
+                  id="nachname"
+                  class="block w-full focus:outline-none rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm"
+                  placeholder="Mustermann"
+                />
+              </div>
+            </div>
+            <div class="mt-8">
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <div class="mt-1">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="block w-full focus:outline-none rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  placeholder="you@example.com"
+                />
+              </div>
+            </div>
+            <div class="mt-4">
+              <label
+                for="password"
+                class="block text-sm font-medium text-gray-700"
+                >Password</label
+              >
+              <div class="mt-1">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="block w-full focus:outline-none rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+          </div>
+          <form
+            action="/dashboard.html"
+            class="mt-4 grid grid-cols-2 grid-rows-1 items-center"
+          >
+            <p class="items-center text-xs float-left row-start-1">
+              <a href="/login.html" class="text-green-500">Login </a>here!
+            </p>
+            <button
+              type="submit"
+              class="row-start-1 rounded-md border border-transparent bg-green-500 px-4 py-2 text-sm font-medium text-white text-center shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2"
+            >
+              Register
+            </button>
+          </form>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
