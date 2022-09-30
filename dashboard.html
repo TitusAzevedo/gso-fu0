@@ -7,6 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StundenplanDings</title>
     <link rel="stylesheet" href="dashboard.css">
+
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 15px;
+            height: 50px;
+            padding-right: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        /* Handle 64C5A7 */
+        ::-webkit-scrollbar-thumb {
+            background: url('./beff.jpg');
+            border-radius: 10px;
+            
+            background-position: center;
+
+        }
+
+       
+    </style>
+
 </head>
 
 <body>
@@ -39,7 +66,7 @@
         </div>
         <div class="flex flex-col md:pl-64">
             <div class="sticky top-0 z-10 flex h-16 flex-shrink-0 bg-white shadow">
-                
+
                 <div class="flex flex-1 justify-between px-4">
                     <div class="flex flex-1 items-center ">
                         <h3
@@ -48,7 +75,8 @@
                     </div>
                     <div class="ml-4 flex items-center md:ml-6">
                         <div>
-                            <button class="text-md hover:text-green-600" onclick="toggleModalVorschlag()">Vorschläge anlegen</button>
+                            <button class="text-md hover:text-green-600" onclick="toggleModalVorschlag()">Vorschläge
+                                anlegen</button>
                         </div>
                         <!-- Beef Jezos Profil Bild-->
                         <div class="relative ml-3">
@@ -56,7 +84,7 @@
                                 <button type="button"
                                     class="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                                     id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                                    
+
 
                                     <img class="h-12 w-12 rounded-full" src="./beff.jpg" alt="">
                                 </button>
@@ -74,7 +102,7 @@
                         <h1 class="text-2xl font-semibold text-gray-900">Übersicht</h1>
                     </div>
                     <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-                       
+
                         <div class="py-4">
 
                             <!-- kalendar start -->
@@ -657,7 +685,8 @@
 
                                                             <div class="basis-5/6">
                                                                 <label for="comment"
-                                                                    class="block text-sm text-left font-medium text-gray-700">Wiederkehrende Tätigkeit</label>
+                                                                    class="block text-sm text-left font-medium text-gray-700">Wiederkehrende
+                                                                    Tätigkeit</label>
                                                                 <div class="mt-1">
                                                                     <textarea rows="2" name="comment" id="comment"
                                                                         class="block w-full rounded-md border-gray-300 sm:text-sm p-4"
@@ -766,7 +795,7 @@
                                                 <div class="ml-4 flex flex-shrink-0">
                                                     <button type="button" onclick="toggleNoti()"
                                                         class="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
-                                                        
+
                                                         <!-- Heroicons.com svg icon -->
                                                         <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg"
                                                             viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -791,12 +820,12 @@
                             <!-- Notification ende -->
 
 
-                        <a href="https://codingarage.de/"> 
-                            <p class="text-md text-gray-500 mt-16 text-center">
-                                Build by
-                                <img src="./logo.png" class="h-12 inline" />
-                            </p>
-                        </a>
+                            <a href="https://codingarage.de/">
+                                <p class="text-md text-gray-500 mt-16 text-center">
+                                    Build by
+                                    <img src="./logo.png" class="h-12 inline" />
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
